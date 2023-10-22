@@ -75,7 +75,7 @@ public class Prodotto {
     //metodo numero random codice
     private int randomCodice(){
         Random random = new Random();
-        this.codice = random.nextInt(100000000) + 10000000;
+        this.codice = random.nextInt(10000000, 100000000);
         return this.codice;
     }
 }
